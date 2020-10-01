@@ -8,27 +8,27 @@ puts "4. Combien commencent par une majuscule (première lettre juste après le 
 puts "5. Trie la liste de handle par ordre alphabétique."
 puts "6. Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
 puts "7. Quelle est la position dans l'array de la personne @epenser ?" # >>> 373
-puts "8. Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
-
-puts ">>> Veuillez choisir le numero de l'exercice a corriger <<<"
+puts "8. Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, etc)"
+puts " "
+puts "Choisi le numéro de l'exercice à corriger"
 print "> "
 choice = gets.chomp.to_i
 
   case choice
       when 1
-        puts journalists.length 
+        puts "la réponse est : #{journalists.length}" 
       when 2
-        puts journalists.min{|a,b| a.size <=> b.size}
+        puts "la réponse est : #{journalists.min{|a,b| a.size <=> b.size}}" 
       when 3
-        puts journalists.count{|a| a.length == 6}
+        puts "la réponse est : #{journalists.count{|a| a.length == 6}}" 
       when 4
-        puts journalists.count {|e| e =~ /^@[A-Z]/}
+        puts "la réponse est : #{journalists.count {|e| e =~ /^@[A-Z]/}}" 
       when 5
-        puts journalists.sort_by { |a| a.downcase }
+        puts "la réponse est : #{journalists.sort_by { |a| a.downcase }}" 
       when 6
-        puts journalists.sort_by(&:length)
+        puts "la réponse est : #{journalists.sort_by(&:length)}" 
       when 7
-        puts journalists.index('@epenser')
+        puts "la réponse est : #{journalists.index('@epenser')}" 
       when 8
           longer = journalists.max{|a,b| a.size <=> b.size}
           num_max = longer.size
