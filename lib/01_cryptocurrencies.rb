@@ -7,6 +7,7 @@ price = ["6558.07", "468.95", "0.487526", "762.84", "8.86", "85.26", "0.151268",
  #Associe chaque devise à son montant pour obtenir un hash du genre :
   hash_crypto = Hash[name.zip(price)]
 
+  puts " "
   puts "1. La ou les crypto qui ont la plus grosse valeur" #Project-X 46183.20
   puts "2. La ou les crypto qui ont la plus petite valeur " #Sprouts 4.5e-07
   puts "3. Les devises dont le cours est inférieur à 6000" #1601 / 1605

@@ -1,2 +1,6 @@
-# w2_data_scientist
-Ruby data scientist Project - week 2 day 4 
+# Projet data_scientist
+
+Le but de ce projet est d'analyser et utiliser des datas en masse via des arrays et des hashs.
+
+
+
